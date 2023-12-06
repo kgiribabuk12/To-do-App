@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&family=Urbanist:wght@100;300;400;500&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  height: 50px;
+  box-shadow: 1px 1px #888888;
+  border: 1px gray;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-class {
+  margin-top: 50px;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-input-text {
+  outline: none;
+  padding: 10px 50px 10px 50px;
+  /* border: none; */
+  border-radius: 5px;
+  width: 100%;
+}
+
+.form-input-button {
+  outline: none;
+  padding: 10px 50px 10px 50px;
+  /* border: none; */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-list-parent {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-items-list {
+  width: 95%;
+  padding: 20px 10px 20px 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-title {
+  /* padding: 20px 50px 20px 10px; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.todo-buttons {
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.todo-action-button {
+  border-radius: 5px;
+  padding: 0px;
+  height: 30px;
+  width: 30px;
+  outline: "none";
+  border: "none";
+  cursor: pointer;
+}
+
+.filter {
+  padding: 10px 10px 10px 10px;
+}
+
+.filters-parent {
+  width: 100%;
+  /* padding: 20px 10px 20px 10px; */
+  padding-top: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.filter-input-text {
+  outline: none;
+  padding: 10px 50px 10px 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 100%;
 }
